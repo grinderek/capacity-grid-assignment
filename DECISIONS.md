@@ -8,7 +8,16 @@ plenty. We read this first.
 There are things this brief doesn't specify. Which ones did you hit, what did you decide,
 and why?
 
--
+- Treat each assignment row as a separate allocation. The schema allows matching
+  rows with distinct IDs, and the seed has 15 rows for every person, project, and
+  date range combination. Sum all of their hours
+
+- Count planned hours on Monday through Friday. Include an assignment boundary
+  date if it falls on a weekday
+
+- Use the full weekly capacity for a partial week. Count planned hours within
+  the selected dates. For someone with a 40-hour weekly capacity and 10 hours
+  planned per day from Wednesday through Friday, that selection shows 30 of 40 hours
 
 ## What did you notice that looked wrong?
 
