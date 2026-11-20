@@ -34,4 +34,9 @@ One concrete example. Every real session has one.
 
 ## What would you do differently with a week?
 
--
+- Paginate people in the capacity API with a cursor based on `people.id`.
+
+- Benchmark short and long ranges with `EXPLAIN (ANALYZE, BUFFERS)`. Compare the
+  existing `assignments(person_id)` index with a B-tree on `(person_id, start_date, end_date)`. 
+
+
