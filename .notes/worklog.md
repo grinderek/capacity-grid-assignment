@@ -10,3 +10,5 @@ left unfinished. Append as you go; a line or two per entry is right.
 - 2026-11-20 10:50 - Fully implemented `capacity.go` API
 
 - 2026-11-20 11:16 - Implemented `CapacityGrid` component
+
+- 2026-11-20 11:28 - Implemented `people.go` API
