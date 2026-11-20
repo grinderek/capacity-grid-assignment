@@ -5,10 +5,12 @@ left unfinished. Append as you go; a line or two per entry is right.
 
 ---
 
-- 2026-11-20 10:27 - Agreed on how to interpret the ambiguous requirements before implementation.
+- 2026-11-20 10:27 - Agreed on how to interpret the ambiguous requirements before implementation
 
 - 2026-11-20 10:50 - Fully implemented `capacity.go` API
 
 - 2026-11-20 11:16 - Implemented `CapacityGrid` component
 
 - 2026-11-20 11:28 - Implemented `people.go` API
+
+- 2026-11-20 11:35 - Documented the final requirement clarifications and the reasoning behind the implementation in `DECISIONS.md`

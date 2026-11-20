@@ -24,19 +24,21 @@ and why?
 Anything in the output that didn't match what you expected. Whether you fixed it or left
 it, we want to know you saw it.
 
--
+- The week of January 12 looked almost empty. I saw planned hours for just 4 people, compared with 198 the week before and 294 the week after.
+  I checked the assignment dates in the seed and confirmed that only those four people had work scheduled that week
 
 ## What did the AI get wrong that you caught?
 
 One concrete example. Every real session has one.
 
--
+- The AI added a two-year limit to the capacity API. I noticed that the brief used two years to describe the expected volume of history 
+  and left the maximum request range unspecified
 
 ## What would you do differently with a week?
 
-- Paginate people in the capacity API with a cursor based on `people.id`.
+- Paginate people in the capacity API with a cursor based on `people.id`
 
 - Benchmark short and long ranges with `EXPLAIN (ANALYZE, BUFFERS)`. Compare the
-  existing `assignments(person_id)` index with a B-tree on `(person_id, start_date, end_date)`. 
+  existing `assignments(person_id)` index with a B-tree on `(person_id, start_date, end_date)`
 
 
